@@ -23,7 +23,7 @@ li {
   font-size: 12px;
   line-height: 0px;
   list-style: none;
-  font-weight:500;
+  font-weight: 500;
 }
 li:before {
   position: relative;
@@ -85,11 +85,45 @@ h1::after {
 }
 
 main {
-  height: 600px;
   background-color: #f06c64;
 }
 main section:first-child {
-  width: 1020px;
+  max-width: 1020px;
+  height: 600px;
+  background-color: #f06c64;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: minmax(300px, 1fr);
+  margin: 0 auto;
+}
+
+.iphone-vertical {
+  background: url("./assets/img/iPhone\ Vertical.png") no-repeat;
+  background-position-x: 110px;
+  background-position-y: -17px;
+}
+.left-arrow {
+  background: url("./assets/img/chev-left.png") no-repeat;
+  height: 30px;
+  position: relative;
+  top: 281px;
+  left: 41px;
+  cursor: pointer;
+}
+
+.right-arrow {
+  background: url("./assets/img/chev-right.png") no-repeat;
+  height: 30px;
+  position: relative;
+  top: 281px;
+  left: 555px;
+  cursor: pointer;
+}
+.iphone-horizontal {
+  background: url("./assets/img/iPhone\ Horizontal.png") no-repeat;
+  background-position: right;
+  background-position: -48px 69px;
 }
 @font-face {
   font-family: "Lato";
