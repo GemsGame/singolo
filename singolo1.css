@@ -82,12 +82,16 @@ h1::after {
 
 h3 {
   font-size: 18px;
-line-height: 18px;
-color: #666d89;
-font-weight: 900;
-text-align: left;
-display: block;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  text-align: left;
+  display: block;
 
+}
+
+.support {
+  letter-spacing: -0.45px;
 }
 .header-row-1 {
   height: 89px;
@@ -156,7 +160,7 @@ main section:last-child {
 .star {
   background: url("./assets/img/star.png") no-repeat;
 }
-.s-block{
+.s-block {
   width: 300px;
   display: grid;
   justify-content: center;
@@ -166,14 +170,14 @@ main section:last-child {
 }
 
 .s-block p {
-
-font-size: 12px;
-line-height: 22px;
-color: #767e9e;
-font-weight: 400;
-text-align: left;
-margin-top:10px;
-word-break: break-all;
+  font-size: 12px;
+  line-height: 21px;
+  color: #767e9e;
+  font-weight: 400;
+  margin-top: 10px;
+  word-break: break-all;
+  overflow: hidden;
+  text-align: justify;
 }
 .services-row-2 {
   width: 980px;
@@ -181,7 +185,7 @@ word-break: break-all;
   justify-content: space-evenly;
   grid-template-columns: repeat(3, auto);
   margin: 0 auto;
-  padding: 5px;
+  padding: 6px;
   row-gap: 30px;
 }
 .services-row-1 > div p {
