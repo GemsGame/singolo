@@ -59,6 +59,16 @@ h1 {
   letter-spacing: -0.475px;
 }
 
+.title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 0px;
+  letter-spacing: 0px;
+}
 .logo {
   display: grid;
   align-content: center;
@@ -70,6 +80,15 @@ h1::after {
   content: "*";
 }
 
+h3 {
+  font-size: 18px;
+line-height: 18px;
+color: #666d89;
+font-weight: 900;
+text-align: left;
+display: block;
+
+}
 .header-row-1 {
   height: 89px;
   display: grid;
@@ -98,6 +117,82 @@ main section:first-child {
   margin: 0 auto;
 }
 
+main section:last-child {
+  height: 495px;
+  background-color: #f2f2f2;
+}
+
+.services-row-1 {
+  width: 1020px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+.services-row-1 > div {
+  margin: 67px 40px 40px 40px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: #666d89;
+}
+
+.pen {
+  background: url("./assets/img/Ellipse.png") no-repeat;
+}
+.bulb {
+  background: url("./assets/img/bulb.png") no-repeat;
+}
+.heart {
+  background: url("./assets/img/heart.png") no-repeat;
+}
+.phone {
+  background: url("./assets/img/phone.png") no-repeat;
+}
+.bubble {
+  background: url("./assets/img/bubble.png") no-repeat;
+}
+.star {
+  background: url("./assets/img/star.png") no-repeat;
+}
+.s-block{
+  width: 300px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.s-block p {
+
+font-size: 12px;
+line-height: 22px;
+color: #767e9e;
+font-weight: 400;
+text-align: left;
+margin-top:10px;
+word-break: break-all;
+}
+.services-row-2 {
+  width: 980px;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, auto);
+  margin: 0 auto;
+  padding: 5px;
+  row-gap: 30px;
+}
+.services-row-1 > div p {
+  font-size: 18px;
+  line-height: 29.5px;
+  color: #767e9e;
+  letter-spacing: -0.22px;
+  font-weight: 300;
+  margin-top: 30px;
+  text-align: justify;
+}
 .iphone-vertical {
   background: url("./assets/img/iPhone\ Vertical.png") no-repeat;
   background-position-x: 110px;
@@ -113,8 +208,10 @@ main section:first-child {
 }
 
 .right-arrow {
+  background-color: #f06c64;
   background: url("./assets/img/chev-right.png") no-repeat;
   height: 30px;
+  width: 30px;
   position: relative;
   top: 281px;
   left: 555px;
@@ -130,8 +227,8 @@ main section:first-child {
   font-style: normal;
   font-weight: 300;
   font-display: fallback;
-  src: url("assets/lato-v16-latin-300.woff2") format("woff2"),
-    url("assets/lato-v16-latin-300.woff") format("woff");
+  src: url("assets/fonts/lato-v16-latin-300.woff2") format("woff2"),
+    url("assets/fonts/lato-v16-latin-300.woff") format("woff");
 }
 
 @font-face {
@@ -148,8 +245,8 @@ main section:first-child {
   font-style: normal;
   font-weight: 700;
   font-display: fallback;
-  src: url("assets/fonts/fonts/lato-v16-latin-700.woff2") format("woff2"),
-    url("assets/fonts/fonts/lato-v16-latin-700.woff") format("woff");
+  src: url("assets/fonts/lato-v16-latin-700.woff2") format("woff2"),
+    url("assets/fonts/lato-v16-latin-700.woff") format("woff");
 }
 
 @font-face {
@@ -159,4 +256,8 @@ main section:first-child {
   font-display: fallback;
   src: url("assets/fonts/lato-v16-latin-900.woff2") format("woff2"),
     url("assets/fonts/lato-v16-latin-900.woff") format("woff");
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }
